@@ -1,0 +1,67 @@
+#mainWrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: wheat
+}
+
+#mainContainer{
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    width: 61%;
+    height: 50%;
+    background-color: whitesmoke;
+}
+
+#scoreContainer{
+     position: absolute;
+    top: 130px;
+    left: 50px;
+    width: 61%;
+    height: 50%;
+    background-color: coral
+}
+
+#scoreText{    
+    position: relative;
+    top: 90px;
+    font-size: 40px;
+    width: 317px;
+    left: 128px;
+    text-align: center;
+}
+.questionContainer{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    color: gray
+}  
+
+.optionContainer{
+    position: relative;
+    top: 40px;
+    margin: 6px;
+    left: 57px;
+    color: grey
+}
+.radioBtn{
+    position: relative;
+    top: 19px;
+    margin-top: auto;
+    left: 20px;
+    width: 20PX;
+    color: grey;
+    cursor: pointer
+}
+
+.button{
+    position: absolute;
+    top:340px;
+    width: 120px;
+    height: 50px;
+    cursor: pointer
+}
+
+
