@@ -31,13 +31,11 @@ export default class APP {
             case "PREVIOUS":
                 this.questionNo = this.questionNo - 1
                 this.setQuestion(this.data[this.questionNo])
-                this.view
                 break;
             case "SUBMIT":
-                this.finalScore = this.view.ansCount
-                console.log("this.finalScore",this.view)
-                this.view.displayScore(this.finalScore)
                 this.view.ansCheck(this.data)
+                this.finalScore = this.view.ansCountCal();
+                this.view.displayScore(this.finalScore)                
                 break;
         }
     }

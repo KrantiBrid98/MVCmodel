@@ -71,12 +71,14 @@ export default class View {
                 this.ansCount++;
             }
         })
-        this.ansCountCal(this.ansCount);
+        // this.ansCountCal(this.ansCount);
         console.log(this.ansCount)
+        this.ansCount1 = this.ansCount
     }
 
-    ansCountCal(finalScore) {  
-        return finalScore;
+    ansCountCal () {  
+        console.log(this,"this.ansCount")
+        return this.ansCount;
     }
 
     displayScore(score) {
@@ -87,9 +89,8 @@ export default class View {
         let scoreText = document.createElement('div');
         $(scoreText)
             .attr("id", `scoreText`)
-            .html(`YOUR SCORE IS ${score}/12`);
+            .html(`YOUR SCORE IS ${score}/4`);
         $("#scoreContainer").append(scoreText);
-
     }
 
     createButton() {
